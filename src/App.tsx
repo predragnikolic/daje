@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
+import { toast } from "react-toastify";
 
 type Product = {
 	label: string;
@@ -147,7 +148,7 @@ function App() {
 
   const addOrder = () => {
     if (orderItems.length === 0) {
-      alert('Prazna prodzbina')
+      toast('Prazna prodzbina')
       return
     }
     const newOrder: Order = {
@@ -160,7 +161,7 @@ function App() {
 
     setCount(initialState())
     setCustomerAmount('')
-    alert('Dodato')
+    toast('Прокњижено')
   }
 
   const hideOrder = (o: Order) => {
