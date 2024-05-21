@@ -73,12 +73,12 @@ const products: Product[] = [
 	},
 	{
 		label: "Бело семе",
-		price: 250,
+		price: 300,
 		type: "hrana",
 	},
 	{
 		label: "Црно семе",
-		price: 250,
+		price: 150,
 		type: "hrana",
 	},
 	{
