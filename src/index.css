@@ -1,6 +1,22 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 * {
   min-width: 0px;
   box-sizing: border-box;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -8,10 +24,18 @@ body {
   padding: 1rem;
 }
 
+.label {
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
 .order-grid {
   width: 300px;
   display: grid;
-  gap: 1rem;
   justify-items: center;
   grid-template-columns: auto auto;
 }
@@ -35,3 +59,4 @@ body {
 .gap-1 {
   gap: 1rem;
 }
+
