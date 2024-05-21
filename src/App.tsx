@@ -259,6 +259,11 @@ function App() {
           <hr />
           </div>)}
 
+          <button onClick={() => {
+          	const conf = confirm('Да ли си сигуран да желиш да избиршеш све')
+          	if (conf=== true) setOrders([])
+          }}>ИЗБРИШИ СВЕ ПОДАТКЕ</button>
+
           </details>
 		</>
 	);
