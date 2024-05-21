@@ -160,6 +160,7 @@ function App() {
 
     setCount(initialState())
     setCustomerAmount('')
+    alert('Dodato')
   }
 
   const hideOrder = (o: Order) => {
