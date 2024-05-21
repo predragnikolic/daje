@@ -244,6 +244,8 @@ function App() {
 
           <p>Зарада: {zarada} РСД</p>
 
+          <p className="note">Сотрнирани рачуни се неће урачунати у зараду</p>
+
           {[...orders].reverse().map((o, i) => <div key={o.id}>
             <div className="flex gap-1">
               <p>#{i}</p>

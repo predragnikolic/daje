@@ -11,6 +11,13 @@ input[type=number]::-webkit-outer-spin-button {
   box-sizing: border-box;
 }
 
+.note {
+  border-left: 4px solid #000;
+  display: block;
+  opacity: 0.5;
+  padding: 0.5rem;
+}
+
 .button {
   width: 45px;
   height: 45px;
