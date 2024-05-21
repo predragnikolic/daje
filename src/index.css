@@ -12,8 +12,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,9 @@ body {
   margin-bottom: 1rem;
 }
 .order-grid {
+  margin: 1rem 0;
   width: 300px;
+  gap: 0.4rem;
   display: grid;
   justify-items: center;
   grid-template-columns: auto auto;
