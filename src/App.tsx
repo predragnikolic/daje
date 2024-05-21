@@ -222,6 +222,12 @@ function App() {
 			{orderItems.length > 0 && (<>
 
         <OredrItemsTable totalOrderPrice={totalOrderPrice} orderItems={orderItems} />
+        <button onClick={() => {
+        	const c = confirm('откажи')
+        	if (c=== true) {
+        		setCount(initialState())
+        	}
+        }} style={{margin: '1rem 0'}}>Откажи Поруџбину</button>
         <hr/>
         <p>Укупно: {totalOrderPrice} РСД</p>
         <div className="flex gap-1"  style={{alignItems: 'center'}}><span>Дато:</span><input type="number" min={0} style={{padding: '1rem'}} value={customerAmount} onChange={(e) => {
@@ -250,9 +256,8 @@ function App() {
           {[...orders].reverse().map((o, i) => <div key={o.id}>
             <div className="flex gap-1">
               <p>#{i}</p>
-              <p>{o.orderItems.length} Производ/а</p>
               <p style={{textDecoration: o.hidden ? 'line-through' : ''}}>{o.totalPrice} РСД</p>
-              <div>{o.hidden ? <p>Сторнирано</p> : <button onClick={() => hideOrder(o)} >Сторнрај</button>}</div>
+              <div>{o.hidden ? <p>Сторнирано</p> : <button style={{margin: '1rem'}} onClick={() => hideOrder(o)} >Сторнрај</button>}</div>
             </div>
             <div>
               <div style={{opacity: o.hidden ? 0.5 : 1}}><OredrItemsTable orderItems={o.orderItems} totalOrderPrice={o.totalPrice} /></div>
