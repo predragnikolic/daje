@@ -37,6 +37,16 @@ const products: Product[] = [
 		type: "pice",
 	},
 	{
+		label: "плазма",
+		price: 300,
+		type: "hrana",
+	},
+	{
+		label: "крембана",
+		price: 50,
+		type: "hrana",
+	},
+	{
 		label: "Негазирана вода",
 		price: 150,
 		type: "pice",
